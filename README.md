@@ -41,7 +41,7 @@ Full Subtractor:
 
 VERILOG CODE:
 #VERILOG CODE:
-
+```
 Program
 Logic Gates:
 module logicgate (a,b,andgate,orgate,xorgate,nandgate,norgate,xnorgate,notgate);
@@ -55,16 +55,18 @@ nor(norgate,a,b);
 xnor(xnorgate,a,b);
 not(notgate,a);
 endmodule
+```
 # Half Adder:
-
+```
 module halfadder(a,b,sum,carry);
 input a,b;
 output sum,carry;
 xor g1(sum,a,b);
 and g2(carry,a,b);
 endmodule
-
+```
 # Half Subractor:
+```
 
 module halfsubtractor(a,b,diff,borrow);
 input a,b;
@@ -83,9 +85,9 @@ xor g3(sum,w1,c);
 and g4(w3,w1,c);
 or g5(carry,w3,w2);
 endmodule
-
+```
 # Full Subtractor:
-
+```
 module fs(a,b,bin,d,bout);
 input a,b,bin; 
 output d,bout;
@@ -96,10 +98,9 @@ and g3(w2,a,~w1);
 and g4(w3,~b,bin);
 or g5(bout,w2,w3);
 endmodule
-
-
+```
 # 4 bit ripple carry adder:
-
+```
 module rippe_adder(S,Cout,X,Y,Cin);
 input [3:0] X,Y;
 input Cin;
@@ -122,7 +123,7 @@ and G3(w2,X,Ci);
 and G4(w3,X,Y);
 or G5(CO,w3,w3);
 endmodule
-
+```
 # 8 bit ripple carry adder:
 ```
 module rippe_adder(S,Cout,X,Y,Cin);
@@ -151,7 +152,7 @@ and G3(w2,X,Ci);
 and G4(w3,X,Y);
 or G5(CO,w3,w3);
 endmodule
-
+```
 
 
 OUTPUT:
